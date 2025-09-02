@@ -93,7 +93,7 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Include pictures of your storyboards here**\*\*
 
-1. ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+1. ![SB1](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Storyboards/Screenshot%202025-09-02%20at%204.18.14%E2%80%AFPM.png?raw=true)
 
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
