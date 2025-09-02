@@ -93,6 +93,8 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Include pictures of your storyboards here**\*\*
 
+1. ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
