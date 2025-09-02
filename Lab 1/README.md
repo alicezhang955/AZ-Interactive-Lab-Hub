@@ -2,7 +2,7 @@
 
 # Staging Interaction
 
-\*\*Alice Zhang, Alaysia Reape, Iqra Khan\*\*
+\*\*Alice Zhang az536, Alaysia Reape ar2443, Iqra Khan ik368, August Wang\*\*
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
@@ -74,7 +74,22 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
+1. The Guided Light Library: The interaction occurs during the day when the library is open and takes place in a library. The user is a visitor to the library. The other people present who are not visible are the librarian, other library workers, and other library guests. The goal is for the person who is visiting the library to find the book they are looking for using the interactive device/light.
+   
+2. Room Activity Light Dorm: The interaction happens throughout the day depending on the scene. This includes the morning, afternoon, or evening. All of the events take place in the dorm room or its communal space. There are multiple players including the different roommates and their guest depending on the scene specifically. In some scenes the roommate is by themselves and in others they have a guest or multiple. An unseen person in this storyboard may be the person viewing the color of the light before interacting with the roommate. The actor is either by themselves, with another person or multiple who are their guests, or knowingly or unknowingly with the person viewing the light. The goal is for the roommate to use the light to indicate the activity happening in the room without being interrupted by another person. For the other person, their goal is to find out what's happening in the room without interrupting that roommate.
+
+3. The Pet Care Light/Feeder: The interaction is happening in a kitchen during the day while the cat owner is away. The primary actor is the cat (the user). The unseen player is the cat’s owner, who will later interpret the light. The cat interacts with the food and water bowls. The device/light changes color depending on what the cat needs:for example, red when the food bowl is empty, blue when the water bowl is low. When the owner returns, they see the light and know exactly what the pet needs. The goal is for the cat’s needs to be “communicated” through the light, helping the absent owner understand and take care of the pet.
+
+4. The Workout Motivator: The interaction happens in a living room or gym area. The primary actor is someone who is exercising. As the actor exercises, the device gradually glows brighter. If the actor slows down the movement or wants to give up, the light changes frequency to hype them up. When they finish, it flashes in celebration. The goal is to provide motivation and track progress through light feedback.
+
+5. Visual Glucose Monitor: This device is designed to be used throughout everyday activities. The main user is wearing the glucose monitor. Other players nearby might also notice alerts but will not impact light functionality. The main user wears the monitor. If the user’s glucose levels rise above the safe threshold, the device flashes to alert the user and those nearby. Once the user’s levels return to normal, the light turns off. The goal is to provide real-time alerts of harmful blood sugar levels.
+
+6. Indoor Plant Buddy: This device is designed to be used indoors, placed within plant pots. The interaction with the user will occur within the same room. The main player is the plant owner and other players may be anyone nearby who sees the light effects. The device sits in the soil with its light visible above. It measures hydration and nutrients, changing colors to reflect soil health. The light is always on, and users interact by observing it. The goal of this device is to provide a simple, constant visual indicator of soil quality to help owners care for their plants.
+
+7. Hydration Bottle: This device is designed to be used throughout the day. The main player is carrying this water bottle with them. Other people can see the bottle light up. The hydration bottle lights up throughout the day to remind the user to drink water. Once the user drinks enough water, the light turns off. This repeats throughout the day. The goal is to remind the user to hydrate themselves throughout the day.
+
+8. Light Chair: The setting is at home in your room. The main player is working or studying on their desk. They are sitting on a chair. The user is sitting down on the chair. After some time, the chair lights up. This reminds the user to get up, stretch and take a break. The goal is to remind the user to stretch and take a breather while they are working or studying.
+
 
 \*\***Include pictures of your storyboards here**\*\*
 
