@@ -97,7 +97,7 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 2. ![SB2](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Storyboards/Screenshot%202025-09-02%20at%204.20.56%E2%80%AFPM.png?raw=true)
 
-3. ![SB3](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Storyboards/Screenshot%202025-09-02%20at%204.19.31%E2%80%AFPM.pngg?raw=true)
+3. ![SB3](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Storyboards/Screenshot%202025-09-02%20at%204.19.31%E2%80%AFPM.png?raw=true)
 
 4. ![SB4](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Storyboards/Screenshot%202025-09-02%20at%204.38.57%E2%80%AFPM.png?raw=true)
 
