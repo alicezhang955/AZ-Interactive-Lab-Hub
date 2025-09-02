@@ -145,7 +145,7 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-<video src="https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Demos/GuidedLibrary1.MOV"></video>
+<video src="https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Demos/GuidedLibrary1.MOV" width="300" />
 
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
