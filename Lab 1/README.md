@@ -112,6 +112,7 @@ The interactive device can be anything *except* a computer, a tablet computer or
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
+
 Visual Glucose Monitor: Some critiques included concerns over for user privacy as well as suggestions for lighting features for additional information displayed.
 
 Indoor Plant Buddy: One critique was to include additional functionality to indicate different levels of soil hydration.
