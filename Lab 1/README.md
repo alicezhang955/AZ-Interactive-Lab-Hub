@@ -192,6 +192,8 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your devices might look like here.**\*\*
 
+![sketch](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Storyboards/Screenshot%202025-09-02%20at%204.19.07%E2%80%AFPM.png?raw=true)
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
 
