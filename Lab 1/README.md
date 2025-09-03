@@ -196,10 +196,13 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
+Design considerations include waterproofing and ease of sizing up and down depending on wrist size. The band should be able to withstand everyday environments, including sweat, heat, and blunt physical force.
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
+
+Videos of prototyped interactions can be found [here](https://drive.google.com/drive/folders/1kSUskptzW78pKM0_CgVHx-R-p_F5Uokn)
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
