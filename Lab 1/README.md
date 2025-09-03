@@ -123,8 +123,11 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+The wristband alert may not be as visible in certain hand positions. 
+
 \*\***Are there new ideas that occur to you or your collaborator that come up from the acting?**\*\*
 
+Due to the consideration above, the design idea changed from an envisioned row of lights just on the top of the wristband to a ring of lights around the entire band.
 
 ## Part C. Prototype the device
 
@@ -202,10 +205,12 @@ Design considerations include waterproofing and ease of sizing up and down depen
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
-Videos of prototyped interactions can be found [here](https://drive.google.com/drive/folders/1kSUskptzW78pKM0_CgVHx-R-p_F5Uokn)
+Videos of prototyped interactions can be found [here](https://drive.google.com/drive/folders/1kSUskptzW78pKM0_CgVHx-R-p_F5Uokn).
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
+
+Collaborators were Alaysia Reape, Iqra Khan, and August Wang (for storyboards 3 and 4 only).
 
 
 
