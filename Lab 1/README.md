@@ -146,14 +146,17 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
 
+Guided Light Library:
 
 https://github.com/user-attachments/assets/ef40ff45-5f02-4c1d-9307-91dc48b5c946
 
 
+Hydration Bottle:
 
 https://github.com/user-attachments/assets/f38e36c4-a834-4b8f-8047-fbcc7c01f35b
 
 
+Visual Glucose Monitor:
 
 https://github.com/user-attachments/assets/91f23799-c5c4-420a-85fe-444792f52556
 
@@ -163,6 +166,22 @@ https://github.com/user-attachments/assets/91f23799-c5c4-420a-85fe-444792f52556
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
+
+
+Guided Light Library:
+
+https://github.com/user-attachments/assets/93d9d177-e156-4940-9981-e4af3e7eb09f
+
+
+Hydration Bottle:
+
+https://github.com/user-attachments/assets/cb43dc48-037d-4db1-9286-1b10cbd39da3
+
+
+Visual Glucose Monitor:
+
+https://github.com/user-attachments/assets/ebdbb858-9755-404e-a5a6-5169a564776b
+
 
 
 ## Part E. Costume the device
