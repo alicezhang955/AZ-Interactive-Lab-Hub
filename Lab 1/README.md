@@ -233,3 +233,16 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+On the second iteration of this prototype, we focused on adapting the device for situations where the user may not immediately notice the visual flashing alert. The updated storyboard reflects this use case.
+
+We modified the functionality so that if glucose levels remain high after a set period, the device issues a secondary vibration alert. This ensures the user is prompted to take action even if they overlook the visual signal.
+
+In response to prior feedback about privacy concerns, we chose vibration over sound. This approach both preserves discretion and provides a more immediate way of capturing the user’s attention.
+
+Other design changes include replacing individual LEDs with a continuous LED band across the bracelet, improving visibility of the visual alert. Prototype photos demonstrating this updates are shown below.
+
+Updated Storyboard:
+![SB9](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Files/IMG_1166.JPG?raw=true)
+
+Updated Prototype Photos:
