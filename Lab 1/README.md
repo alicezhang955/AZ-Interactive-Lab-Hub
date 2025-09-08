@@ -250,3 +250,4 @@ Updated Prototype Photos:
 ![Prototype 2](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Files/IMG_1088.JPG?raw=true)
 A window was added to the prototype to allow an Apple Watch screen to simulate the flashing mechanism for video purposes.
 
+https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Files/IMG_2569.MOV
