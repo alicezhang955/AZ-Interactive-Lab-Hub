@@ -236,11 +236,11 @@ Do last week’s assignment again, but this time:
 
 On the second iteration of this prototype, we focused on adapting the device for situations where the user may not immediately notice the visual flashing alert. The updated storyboard reflects this use case.
 
-We modified the functionality so that if glucose levels remain high after a set period, the device issues a secondary vibration alert. This ensures the user is prompted to take action even if they overlook the visual signal.
+We modified the functionality so that if glucose levels remain high after a set period, the device issues a secondary vibration and sound alert. This ensures the user is prompted to take action even if they overlook the visual signal.
 
-In response to prior feedback about privacy concerns, we chose vibration over sound. This approach both preserves discretion and provides a more immediate way of capturing the user’s attention.
+In response to prior feedback about privacy concerns, the device should have a configurable option to disable either sound or light alerts to preserve discretion if desired. The updated vibration is a key feature would provide a more immediate way of capturing the user’s attention.
 
-Other design changes include replacing individual LEDs with a continuous LED band across the bracelet, improving visibility of the visual alert. Prototype photos demonstrating this updates are shown below.
+Other physical design changes include replacing individual LEDs with a continuous LED band across the bracelet, improving visibility of the visual alert. Prototype photos demonstrating this updates are shown below.
 
 Updated Storyboard:
 ![SB9](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Files/IMG_1166.JPG?raw=true)
@@ -249,3 +249,4 @@ Updated Prototype Photos:
 ![Prototype 1](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Files/IMG_1085.JPG?raw=true)
 ![Prototype 2](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%201/Files/IMG_1088.JPG?raw=true)
 A window was added to the prototype to allow an Apple Watch screen to simulate the flashing mechanism for video purposes.
+
