@@ -124,15 +124,79 @@ Unlike your laptop, the Pi doesn't come with its own keyboard or mouse. While yo
 	```shell
 	pi@raspberry ~ $
 	```
-
-
-### If you want to change the password of your Pi
+### Change the hostname and the password
 
 Write it down somewhere because we do not know how to recover lost passwords on the Pi. In the terminal on your Pi, type `sudo raspi-config` and press enter, you should be able to see the manual of your Pi:
 
+````pi@raspberrypi:~ $ sudo raspi-config ````
+
 <img src="https://www.raspberrypi.org/documentation/computers/images/raspi-config.png" alt="Pi configuration" height="200" />
 
-Choose '1. System Options' and 'S3 Password', they terminal will then ask you to enter your new password. Again, the terminal will not show what you type for security so do not worry about it and just make sure you type the correct new password twice. After you change the password successfully, you will have to use the new password next time you SSH to your Pi.
+Choose ```1. System Options``` and then ```S4 Hostname      Set name for this computer on a network ```, they terminal will then ask you to enter your new hostname. 
+
+The terminal will ask you to reboot it, and you are going to ssh back. After ssh'ed in, you will notice instead of the original 
+
+````pi@raspberrypi:~ $ ````
+
+the terminal will look like this:
+
+````pi@<YOURNEWHOSTNAME>:~ $ ````
+
+Choose ```1. System Options``` and then ```S3 Password      Change password for the 'pi' user```, they terminal will then ask you to enter your new hostname. 
+
+Again, the terminal will not show what you type for security so do not worry about it and just make sure you type the correct new password twice. After you change the password successfully, you will have to use the new password next time you SSH to your Pi.
+
+### IMPORTANT: Configure Your Home WiFi NOW! 🚨
+
+**Before you continue, take 2 minutes to set up your home WiFi** - this will save you from getting locked out later!
+
+While you're SSH'd into your Pi, configure your home WiFi so you don't lose access when you take your Pi home:
+
+```bash
+sudo nmcli connection add type wifi con-name "HomeWiFi" ifname wlan0 ssid "YourNetworkName" wifi-sec.key-mgmt wpa-psk wifi-sec.psk "YourPassword" connection.autoconnect yes
+```
+
+**Replace `YourNetworkName` and `YourPassword` with your actual home WiFi details.**
+
+**Why this matters:** If you only have school WiFi configured and take your Pi home, you'll lose SSH access and won't be able to connect remotely to fix it! Having home WiFi pre-configured means your Pi will automatically connect when you get home.
+
+**Verify it worked:**
+```bash
+nmcli connection show
+```
+This should list your home network.
+
+**Pro Tip:** Consider also setting up your phone's hotspot as a backup connection:
+```bash
+sudo nmcli connection add type wifi con-name "PhoneHotspot" ifname wlan0 ssid "YourPhoneHotspotName" wifi-sec.key-mgmt wpa-psk wifi-sec.psk "YourHotspotPassword" connection.autoconnect yes
+```
+
+**Do this now while you have SSH access!** Otherwise, you'll need to come back to campus, find a screen, or reconfigure everything using the SD card formatter.
+
+#### WiFi Priority Management - Quick Guide
+
+It's also a good idea to set up your Raspberry Pi to use your phone's hotspot. This way, you can always connect to it, even when you're on the go, allowing you to reconfigure it for new Wi-Fi networks.
+
+You might want to give the hotspot Wi-Fi a higher priority so that it prefers connecting to that network. This way, you can test it even when a different network, like Red Rover, is available:
+
+**Change Priority:**
+```bash
+# Set priority (higher number = higher priority)
+sudo nmcli connection modify "connection-name" connection.autoconnect-priority 10
+```
+
+**Check Status:**
+```bash
+# View all connections with priorities
+nmcli -f NAME,AUTOCONNECT,AUTOCONNECT-PRIORITY connection show
+```
+
+**Test Switching:** (or just reboot the pi)
+```bash
+# Force connection to test
+sudo nmcli connection up "connection-name"
+```
+
 
 ### Refresh your knowledge of command line interfaces: 
 
