@@ -143,18 +143,23 @@ def time_to_hours(time_str):
 
 def alt_to_y(alt):
     y_coord = origin[1] + alt / 90 * y_rad
+    print("ycoord", y_coord)
     return y_coord
 
 def az_to_x(az):
     x_coord = 0
+    # if 0 < az < 90:
+    #     x_coord = origin[0] + x_rad * (az) / 90
+    # elif 270 < az < 360:
+    #     x_coord = origin[0] - x_rad * (360 - az) / 90
+    # elif 180 < az < 270:
+    #     x_coord = origin[0] - x_rad * (az - 180) / 90
+    # elif 90 < az < 180:
+    #     x_coord = origin[0] + x_rad * (180 - az) / 90
+
     if 0 < az < 90:
-        x_coord = origin[0] + x_rad * (360 - az) / 90
-    elif 270 < a < 360:
-        x_coord = origin[0] - x_rad * (360 - az) / 90
-    elif 180 < a < 270:
-        x_coord = origin[0] - x_rad * (az - 180) / 90
-    elif 90 < a < 180:
-        x_coord = origin[0] + x_rad * (180 - az) / 90
+        x_coord = origin[0] + x_rad * math.sin(math.pi*az/180)
+        print("xcoord", x_coord)
     return x_coord
 
 
@@ -229,10 +234,10 @@ def moon_halo(coord):
 def draw_clock():
     for i in range(12):
         rads = math.radians(i * 30)
-        x1 = origin[0] + (3.5 * x_rad - 1) * math.cos(rads) 
-        x2 = origin[0] + (3.5 * x_rad + 1) * math.cos(rads)
-        y1 = origin[1] + (3.5 * y_rad - 1) * math.sin(rads)
-        y2 = origin[1] + (3.5 * y_rad + 1) * math.sin(rads)
+        x1 = origin[0] + (x_rad - 1) * math.cos(rads) 
+        x2 = origin[0] + (x_rad + 1) * math.cos(rads)
+        y1 = origin[1] + (y_rad - 1) * math.sin(rads)
+        y2 = origin[1] + (y_rad + 1) * math.sin(rads)
         draw.line(xy = [x1, y1, x2, y2],
                 fill = (255, 255, 255),
                 width = 1)
@@ -242,6 +247,11 @@ def draw_horizon():
     draw.line(xy = [0, origin[1], width, origin[1]],
             fill = (255, 255, 255),
             width = 1)
+
+def set_background():
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    draw_clock()
+    draw_horizon()
 
 def get_ip(url='http://checkip.dyndns.org'):
     response = request.urlopen(url).read().decode('utf-8')
@@ -258,8 +268,8 @@ def get_location(ip, fname='./data/GeoLiteCity.dat'):
 
 #VISUAL CONFIGURABLES
 origin = [width / 2, height / 2]
-y_rad = 15
-x_rad = 20
+y_rad = 80
+x_rad = 100
 rad = 10
 e_rad = 2
 
@@ -270,8 +280,8 @@ date = datetime.utcnow()
 moon = ephem.Moon()
 obs = ephem.Observer()
 obs.date = date
-obs.lon = np.deg2rad(location['longitude'])
-obs.lat = np.deg2rad(location['latitude'])
+obs.lon = np.deg2rad(location.location.longitude)
+obs.lat = np.deg2rad(location.location.latitude)
 
 
 #Loop over one day
@@ -297,23 +307,38 @@ for k in range(24):
     
 az, alt = map(np.rad2deg, (az, alt))
 
-#START DRAWING
-# Draw a black filled box to clear the image.
-draw.rectangle((0, 0, width, height), outline=0, fill=0)
-
-#Draw horizon
-draw_horizon()
-
-#Draw clock
-draw_clock()
+#Walk through next 24 hours
 for x, y, text in zip(az, alt, symbols):
-    y_coord = alt_to_y(alt)
-    x_coord = az_to_x(az)
+    #Set coords
+    y_coord = alt_to_y(y)
+    x_coord = az_to_x(x)
+    print(x)
     coord = [x_coord, y_coord]
+
+    #Draw moon
+    set_background()
     waning_crescent((x_coord, y_coord), e_rad)
+    disp.image(image, rotation)
+    
+    time.sleep(1)
 
 
 while True:
+    #Walk through next 24 hours
+    for x, y, text in zip(az, alt, symbols):
+        #Set coords
+        y_coord = alt_to_y(y)
+        x_coord = az_to_x(x)
+        print(x)
+        coord = [x_coord, y_coord]
+
+        #Draw moon
+        set_background()
+        waning_crescent((x_coord, y_coord), e_rad)
+        disp.image(image, rotation)
+        
+        time.sleep(1)
+
     #get clock time
     current_time = strftime("%Y-%m-%d %H:%M:%S")
     current_day = strftime("%Y/%m/%d")
@@ -343,28 +368,28 @@ while True:
     # Example usage:
     lat = 40.7128 # NYC latitude TODO: figure out latitude
 
-    alt, az = alt_az(moon_location.ra, moon_location.dec, lat, lst_hours)
-    print(f"Altitude: {alt:.2f}, Azimuth: {az:.2f}")
-    print(f"RA: {moon_location.ra:.2f}, Dec: {moon_location.dec:.2f}")
+    # alt, az = alt_az(moon_location.ra, moon_location.dec, lat, lst_hours)
+    # print(f"Altitude: {alt:.2f}, Azimuth: {az:.2f}")
+    # print(f"RA: {moon_location.ra:.2f}, Dec: {moon_location.dec:.2f}")
 
-    y_coord = alt_to_y(alt)
-    x_coord = az_to_x(az)
-    coord = [x_coord, y_coord]
+    # y_coord = alt_to_y(alt)
+    # x_coord = az_to_x(az)
+    # coord = [x_coord, y_coord]
     # print(x_coord, y_coord)
 
-    #START DRAWING
-    # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    # #START DRAWING
+    # # Draw a black filled box to clear the image.
+    # draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
-    #Draw horizon
-    draw_horizon()
+    # #Draw horizon
+    # draw_horizon()
     
-    #Draw clock
-    draw_clock()
+    # #Draw clock
+    # draw_clock()
 
-    #Draw moon with black halo for crossing horizon
-    moon_halo(coord)
-    waxing_crescent(coord, 2)
+    # #Draw moon with black halo for crossing horizon
+    # moon_halo(coord)
+    # waxing_crescent(coord, 2)
     
 
     
