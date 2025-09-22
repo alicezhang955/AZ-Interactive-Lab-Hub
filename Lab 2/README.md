@@ -247,4 +247,4 @@ Celestial Clock provides real time moon location and moon phase about the horizo
 This code was utilized open source examples from https://ocefpaf.github.io/python4oceanographers/blog/2013/10/21/moon_ephem/ and https://michelanders.blogspot.com/2011/01/moon-phases-with-pyephem.html for azimuth, altitude, and lunation calculations. ChatGPT was also used for debugging pyephem, geoip2 packages as well as the cleanup() function.
 
 Below is a video demonstrating Celestial Clock's features by showing the moon's phase and 24-hour trajectory at several dates.
-
+https://www.youtube.com/watch?v=OKRotZ1qNGg 
