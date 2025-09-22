@@ -6,14 +6,9 @@ import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
 import ephem
-
-from astropy.time import Time
-from astropy.coordinates import EarthLocation, AltAz
-import astropy.units as u
 import math
 import re
 from urllib import request
-from pygeoip import GeoIP
 import numpy as np
 from datetime import datetime
 import geoip2.database
@@ -179,12 +174,10 @@ def get_location(ip, fname='./data/GeoLiteCity.dat'):
     return response
 
 def compute_phase(moon, obs):
-    obs.date += ephem.hour * 24 * 19
     nnm = ephem.next_new_moon(obs.date)  
     pnm = ephem.previous_new_moon(obs.date)  
     lunation = (obs.date - pnm) / (nnm - pnm) 
     moon.compute(obs)
-    print(moon.phase)
 
     # MOON PHASES
     # {0, new moon

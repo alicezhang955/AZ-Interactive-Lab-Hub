@@ -240,4 +240,11 @@ As always, make sure you document contributions and ideas from others explicitly
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
+# Lab 2 Part 2 WRITEUP
+
+Celestial Clock provides real time moon location and moon phase about the horizon based on the viewer's current location. It does this by calculating the Moon's azimuth and altitude data at the current time and longitude/latitude (calculated by the pi's IP address). 
+
+This code was utilized open source examples from https://ocefpaf.github.io/python4oceanographers/blog/2013/10/21/moon_ephem/ and https://michelanders.blogspot.com/2011/01/moon-phases-with-pyephem.html for azimuth, altitude, and lunation calculations. ChatGPT was also used for debugging pyephem, geoip2 packages as well as the cleanup() function.
+
+Below is a video demonstrating Celestial Clock's features by showing the moon's phase and 24-hour trajectory at several dates.
 
