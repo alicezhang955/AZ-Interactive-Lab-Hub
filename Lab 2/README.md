@@ -248,3 +248,7 @@ This code was utilized open source examples from https://ocefpaf.github.io/pytho
 
 Below is a video demonstrating Celestial Clock's features by showing the moon's phase and 24-hour trajectory at several dates.
 https://www.youtube.com/watch?v=OKRotZ1qNGg 
+
+Below are photos showing the prototyped clock face and geometry used to create moon phase/location.
+![clock face](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%202/demo_pic/IMG_1512.jpg?raw=true)
+![geometry ex](https://github.com/alicezhang955/AZ-Interactive-Lab-Hub/blob/Fall2025/Lab%202/demo_pic/IMG_1511.jpg?raw=true)
